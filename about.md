@@ -1,3 +1,8 @@
+---
+layout: default
+title: About
+---
+
 # 城中新生手冊
 
 ## 前言
