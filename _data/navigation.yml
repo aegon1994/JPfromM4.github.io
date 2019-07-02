@@ -3,23 +3,23 @@
 - name: 前言
   link: /
 - name: 環境介紹
-  link: /1_envir
+  link: /01_envir
 - name: 說說城中
-  link: /2_about
+  link: /02_about
 - name: 宿舍內
-  link: /3_insideDorm
+  link: /03_insideDorm
 - name: 交通資訊
-  link: /4_traffic
+  link: /04_traffic
 - name: 台北車站、返鄉
-  link: /5_backToHome
+  link: /05_backToHome
 - name: 學餐、醫學院
-  link: /6_aroundCampus
+  link: /06_aroundCampus
 - name: 宿舍網路
-  link: /7_dormNet
+  link: /07_dormNet
 - name: 運動場所
-  link: /8_workout
+  link: /08_workout
 - name: 公園綠地
-  link: /9_park
+  link: /09_park
 - name: 附近食物、宵夜
   link: /10_food
 - name: 商圈資訊
