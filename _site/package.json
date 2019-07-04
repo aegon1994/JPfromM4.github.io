@@ -1,0 +1,26 @@
+{
+  "name": "a_handbook_for_ntu_newbie_in_town-dist",
+  "version": "0.2.0",
+  "description": "城中新生手冊, edited by JP",
+  "main": "index.html",
+  "scripts": {
+	  "start": "jekyll serve",
+	  "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPfromM4/JPfromM4.github.io.git"
+  },
+  "keywords": [
+    "城中",
+    "jekyll",
+    "github.io",
+    "github pages"
+  ],
+  "author": "Jing-Ping Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPfromM4/JPfromM4.github.io/issues"
+  },
+  "homepage": "https://github.com/JPfromM4/JPfromM4.github.io#readme"
+}
