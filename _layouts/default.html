@@ -8,10 +8,10 @@
 </head>
 
 <body>
-  <div style="float: left; height: 100vh; width: 10vw; position: fixed; top: 5vh;">
+  <div class="side-bar">
     {% include navigation.html %}
   </div>
-  <div style="float: right; height: 100vh; width: 70vw; left: 15vw;">
+  <div style=" float: right; height: 100vh; width: 75vw;">
     <h1 style="display: fixed;">城中新生手冊</h1>
     <h2> {{ page.title }} </h2>
     <div style="overflow-y: scroll; height: 80%;"> {{ content }}</div>

@@ -16,5 +16,4 @@ title: 環境介紹
 **我只說500公尺內XD**
 
 <img alt="位置圖" style="height: 400pt; width: 640pt;" src="https://4.bp.blogspot.com/-Lm17g5WipLs/T9mc9VAuu8I/AAAAAAAAIl4/RmRC4GZTAjg/s640/%E4%BD%8D%E7%BD%AE%E5%9C%96.jpg" />  
-
-（source: 住宿組馮安華副理製作，時任女六舍輔導員，最後更動日期：Jun. 5, 2011）
+> （source: 住宿組馮安華副理製作，時任女六舍輔導員，最後更動日期：Jun. 5, 2011）
