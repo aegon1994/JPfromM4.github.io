@@ -2,3 +2,8 @@ body {
     margin-left: 5vw;
 	margin-right: 5vw;
 }
+
+img {
+    height: 500pt;
+    width: 420pt;
+}

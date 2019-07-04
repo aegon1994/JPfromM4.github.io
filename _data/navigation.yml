@@ -8,8 +8,10 @@
   link: /pages/02_about
 - name: 宿舍內
   link: /pages/03_insideDorm
-- name: 交通資訊
+- name: 通勤資訊
   link: /pages/04_traffic
+- name: 返鄉
+  link: /pages/05_backToHome
 - name: 學餐、醫學院
   link: /pages/06_aroundCampus
 - name: 宿舍網路
