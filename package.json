@@ -1,6 +1,20 @@
 {
   "name": "a_handbook_for_ntu_newbie_in_town-dist",
   "version": "0.3.0",
+  "hist-version": {
+      "0.1.0": {
+		  "description": "a draft page, first online ver.",
+		  "commit": "35a531cf211640006cb452021b9367a33c399146"
+	  },
+	  "0.2.0": {
+		  "description": "first ver with full route",
+		  "commit": "4de75704bbd3b3c38d762ce19ce5ad1a223b345d"
+	  },
+	  "0.3.0": {
+	      "description": "with side bar css and improve page[1-5] along with page[0] (all)",
+		  "commit": "b9f175bd3664482302ed98fbeeb37324236899a5"
+	  }
+  },
   "description": "城中新生手冊, edited by JP",
   "main": "index.html",
   "scripts": {
