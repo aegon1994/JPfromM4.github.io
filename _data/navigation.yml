@@ -10,8 +10,6 @@
   link: /pages/03_insideDorm
 - name: 交通資訊
   link: /pages/04_traffic
-- name: 台北車站、返鄉
-  link: /pages/05_backToHome
 - name: 學餐、醫學院
   link: /pages/06_aroundCampus
 - name: 宿舍網路
