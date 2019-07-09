@@ -35,6 +35,7 @@ title: 學餐、醫學院
 > source: 學校網站  
 
 列印時僅能自下列位置讀取檔案，且不能做任何的修改：  
+
    1. 隨身碟  
    2. [計中快速列印檔案上傳系統](https://oper.cc.ntu.edu.tw/fastprint/index.php)  
    3. [NTU Space](https://www.space.ntu.edu.tw/navigate/)
