@@ -107,6 +107,6 @@ blockquote {
     padding-left: 1em; 
 }
 
-ul {
-  border: black solid;
+table, thead, tbody, tr, th, td {
+  border: black 1pt solid;
 }
