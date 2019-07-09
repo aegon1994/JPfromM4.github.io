@@ -3,9 +3,7 @@
     {% for item in site.data.navigation %}
     <li>
       <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;" {% endif %}>
-        <!-- <div class="side-bar-link"> -->
         {{ item.name }}
-        <!-- </div> -->
       </a>
     </li>
     {% endfor %}
