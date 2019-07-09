@@ -296,7 +296,7 @@ Where DNS is:
     $ networksetup -setv6off “<Your Ethernet Adapter>”  
     $ ifconfig <IP> <Mask> <Gateway>    
     ```
-![](https://imgur.com/kXftFFZ.png)  
+<img src="https://imgur.com/kXftFFZ.png" />  
 <br />
 10. 自行架設router/AP  
 請參閱廠商說明文件或請教Google大神，**網管沒有責任幫忙舍胞架設router/AP**。  
