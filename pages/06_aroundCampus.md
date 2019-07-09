@@ -1,11 +1,9 @@
 ---
 
 layout: default  
-title: 學餐、醫學院
+title: 醫學院資源
 
 ---
-
-## 醫學院資源
 
 ### [醫學院圖書館](http://ntuml.mc.ntu.edu.tw/Libopen.action)   （只要有學生證就能進入囉！）  
 
