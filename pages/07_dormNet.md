@@ -27,32 +27,14 @@ Where `YourDormNumber` is:
 <br />
 3. 宿舍搬遷後沒有確實在原宿舍退宿（同時參閱第四點、第七點、第九點）  
 如果進入宿網系統後，顯示登記在原宿舍而沒辦法註冊，請聯絡原宿舍輔導員；如果顯示MAC位址重複，請聯絡原宿舍網管刪除原帳號；有關MAC位址重複，亦請參照下列第七點；如果系統顯示為`住宿在男一240`，請將姓名、學號、設備MAC位址傳送給網管，**由工程師手動開設帳號**，在網管回覆後的下一個工作天，請前往[宿網系統][宿網]確認IP位址，並開啟第九點左圖中之設定，**勾選自動取得**或是將參數改為:  
-    <table>
-        <thead>
-            <tr>
-                <td>項目</td>
-                <td>參數</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>IP</td>
-                <td><code>your.IP.number</code></td>
-            </tr>
-            <tr>
-                <td>Mask</td>
-                <td><code>255.255.255.0</code></td>
-            </tr>
-            <tr>
-                <td>Gateway</td>
-                <td><code>&lt;first.three.number.of.your.IP&gt;.254</code></td>
-            </tr>
-            <tr>
-                <td>DNS</td>
-                <td><code>one.of.the.following</code></td>
-            </tr>
-        </tbody>
-    </table>
+
+    |  項目    |       參數       |  
+    |:-------:|:----------------:|  
+    |   IP  | `your.IP.number` |  
+    |  Mask | `255.255.255.0`  |  
+    |Gateway| `<first.three.number.of.your.IP>.254`  |  
+    |  DNS  | `one.of.the.following`  |  
+
     Where DNS is:  
       - `140.112.2.<197-199>`  
       - `140.112.254.4`  
@@ -60,6 +42,9 @@ Where `YourDormNumber` is:
       - `8.8.8.8`  
     建議優先順序如第九點圖一。  
     <br />
+
+{:start="4"}
+    
 4. 註冊教學（同時參閱第九點）  
 首先請前往網路共用中心**關閉任何無線網路介面，同時接上網路線**，確保設備對外僅能透過網路線聯絡後，參照左下圖路徑，**勾選自動取得IP位址及DNS Server位址（注意：並非第九點中左圖之情形，此處不需手動輸入參數）**，前往[宿網系統][]以NTU帳號註冊。  
 註冊完畢後，請記下左圖所需之五個參數。如能上網，即不須變動任何設定；如果不能，請在左圖中的設定中輸入註冊系統給定之參數（注意：系統給定之IP必定為`140.112.<YourDormNumber>.<1-253>`，並非圖中之參數）。  
@@ -104,6 +89,9 @@ Where `YourDormNumber` is:
 <br/>
 <img alt="(setting)" src="https://imgur.com/kXftFFZ.png" style="width: 720pt; height: 420pt;" />  
 <br />
+
+{:start="10"}
+
 10. 自行架設router/AP  
 請參閱廠商說明文件或請教Google大神，**網管沒有責任幫忙舍胞架設router/AP**。  
 <br />

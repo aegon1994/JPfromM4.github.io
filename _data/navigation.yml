@@ -16,11 +16,11 @@
   link: /pages/06_aroundCampus
 - name: 宿舍網路
   link: /pages/07_dormNet
-- name: 運動場所
-  link: /pages/08_workout
-- name: 公園綠地
-  link: /pages/09_park
-- name: 附近食物、宵夜
+- name: Let's Chill!
+  link: /pages/08_chill
+# - name: 公園綠地
+#   link: /pages/09_park
+- name: 覓食與宵夜
   link: /pages/10_food
 - name: 商圈資訊
   link: /pages/11_shoppingDist

@@ -67,20 +67,14 @@
     </li>
     
     <li>
-      <a href="/pages/08_workout" >
-        運動場所
-      </a>
-    </li>
-    
-    <li>
-      <a href="/pages/09_park" >
-        公園綠地
+      <a href="/pages/08_chill" >
+        Let's Chill!
       </a>
     </li>
     
     <li>
       <a href="/pages/10_food" >
-        附近食物、宵夜
+        覓食與宵夜
       </a>
     </li>
     
@@ -131,34 +125,37 @@
   <li>沒有註冊（同時參閱第四點）<br />
 宿網的資料庫並沒有跟住宿組的資料庫連動，確認入住後，請先至<a href="140.112.2.197">宿網系統</a>以NTU帳號登入後註冊；註冊完畢後，請<strong>關閉所有瀏覽器，五分鐘後再開始使用網路</strong>。<br />
 <br /></li>
-  <li>宿舍搬遷後沒有確實在原宿舍退宿（同時參閱第四點、第七點、第九點）<br />
-如果進入宿網系統後，顯示登記在原宿舍而沒辦法註冊，請聯絡原宿舍輔導員；如果顯示MAC位址重複，請聯絡原宿舍網管刪除原帳號；有關MAC位址重複，亦請參照下列第七點；如果系統顯示為<code class="highlighter-rouge">住宿在男一240</code>，請將姓名、學號、設備MAC位址傳送給網管，<strong>由工程師手動開設帳號</strong>，在網管回覆後的下一個工作天，請前往[宿網系統][宿網]確認IP位址，並開啟第九點左圖中之設定，<strong>勾選自動取得</strong>或是將參數改為:
+  <li>
+    <p>宿舍搬遷後沒有確實在原宿舍退宿（同時參閱第四點、第七點、第九點）<br />
+如果進入宿網系統後，顯示登記在原宿舍而沒辦法註冊，請聯絡原宿舍輔導員；如果顯示MAC位址重複，請聯絡原宿舍網管刪除原帳號；有關MAC位址重複，亦請參照下列第七點；如果系統顯示為<code class="highlighter-rouge">住宿在男一240</code>，請將姓名、學號、設備MAC位址傳送給網管，<strong>由工程師手動開設帳號</strong>，在網管回覆後的下一個工作天，請前往[宿網系統][宿網]確認IP位址，並開啟第九點左圖中之設定，<strong>勾選自動取得</strong>或是將參數改為:</p>
+
     <table>
-     <thead>
-         <tr>
-             <td>項目</td>
-             <td>參數</td>
-         </tr>
-     </thead>
-     <tbody>
-         <tr>
-             <td>IP</td>
-             <td><code>your.IP.number</code></td>
-         </tr>
-         <tr>
-             <td>Mask</td>
-             <td><code>255.255.255.0</code></td>
-         </tr>
-         <tr>
-             <td>Gateway</td>
-             <td><code>&lt;first.three.number.of.your.IP&gt;.254</code></td>
-         </tr>
-         <tr>
-             <td>DNS</td>
-             <td><code>one.of.the.following</code></td>
-         </tr>
-     </tbody>
- </table>
+      <thead>
+        <tr>
+          <th style="text-align: center">項目</th>
+          <th style="text-align: center">參數</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">IP</td>
+          <td style="text-align: center"><code class="highlighter-rouge">your.IP.number</code></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Mask</td>
+          <td style="text-align: center"><code class="highlighter-rouge">255.255.255.0</code></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Gateway</td>
+          <td style="text-align: center"><code class="highlighter-rouge">&lt;first.three.number.of.your.IP&gt;.254</code></td>
+        </tr>
+        <tr>
+          <td style="text-align: center">DNS</td>
+          <td style="text-align: center"><code class="highlighter-rouge">one.of.the.following</code></td>
+        </tr>
+      </tbody>
+    </table>
+
     <p>Where DNS is:</p>
     <ul>
       <li><code class="highlighter-rouge">140.112.2.&lt;197-199&gt;</code></li>
@@ -169,6 +166,9 @@
  <br /></li>
     </ul>
   </li>
+</ol>
+
+<ol start="4">
   <li>註冊教學（同時參閱第九點）<br />
 首先請前往網路共用中心<strong>關閉任何無線網路介面，同時接上網路線</strong>，確保設備對外僅能透過網路線聯絡後，參照左下圖路徑，<strong>勾選自動取得IP位址及DNS Server位址（注意：並非第九點中左圖之情形，此處不需手動輸入參數）</strong>，前往<a href="140.112.2.197">宿網系統</a>以NTU帳號註冊。<br />
 註冊完畢後，請記下左圖所需之五個參數。如能上網，即不須變動任何設定；如果不能，請在左圖中的設定中輸入註冊系統給定之參數（注意：系統給定之IP必定為<code class="highlighter-rouge">140.112.&lt;YourDormNumber&gt;.&lt;1-253&gt;</code>，並非圖中之參數）。<br />
@@ -224,6 +224,9 @@
 <img alt="(setting)" src="https://imgur.com/kXftFFZ.png" style="width: 720pt; height: 420pt;" /><br />
 <br /></p>
   </li>
+</ol>
+
+<ol start="10">
   <li>自行架設router/AP<br />
 請參閱廠商說明文件或請教Google大神，<strong>網管沒有責任幫忙舍胞架設router/AP</strong>。<br />
 <br /></li>
@@ -238,7 +241,6 @@
 </ol>
 
 </div>
-
   </div>
 </body>
 

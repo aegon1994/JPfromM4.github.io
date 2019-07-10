@@ -110,3 +110,7 @@ blockquote {
 table, thead, tbody, tr, th, td {
   border: black 1pt solid;
 }
+
+p code {
+  font-size: 12pt;
+}
