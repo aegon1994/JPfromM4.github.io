@@ -355,13 +355,14 @@ source: 學校網站</p>
 本文件以windows系統為例，若是MacOS使用者，請自行查詢相應之設定（網路偏好設定）。<br />
 本文件亦以男四舍為例，如果是其他宿舍，請自行代換相應網段（也就是說，如果出現<code class="highlighter-rouge">140.112.211/214.xxx</code>，請將第三個數字自行代換成你的宿舍的數字；第九點圖中也請換成<strong><code class="highlighter-rouge">172.28.&lt;YourDormNumber&gt;.&lt;1-253&gt;</code></strong>）：</p>
 
-<p>Where YourDormNumber is:</p>
+<p>Where <code class="highlighter-rouge">YourDormNumber</code> is:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 男四：140.112.211/214.xxx  
-- 女四：140.112.204/224.xxx  
-- 女六：140.112.206/226.xxx  
-- 男二：140.112.212/213.xxx  
-</code></pre></div></div>
+<ul>
+  <li>男四：140.112.211/214.xxx</li>
+  <li>女四：140.112.204/224.xxx</li>
+  <li>女六：140.112.206/226.xxx</li>
+  <li>男二：140.112.212/213.xxx</li>
+</ul>
 
 <ol>
   <li>沒有辦入住<br />
@@ -370,113 +371,120 @@ source: 學校網站</p>
   <li>沒有註冊（同時參閱第四點）<br />
 宿網的資料庫並沒有跟住宿組的資料庫連動，確認入住後，請先至<a href="140.112.2.197">宿網系統</a>以NTU帳號登入後註冊；註冊完畢後，請<strong>關閉所有瀏覽器，五分鐘後再開始使用網路</strong>。<br />
 <br /></li>
-  <li>宿舍搬遷後沒有確實在原宿舍退宿（同時參閱第四點、第七點、第九點）<br />
-如果進入宿網系統後，顯示登記在原宿舍而沒辦法註冊，請聯絡原宿舍輔導員；如果顯示MAC位址重複，請聯絡原宿舍網管刪除原帳號；有關MAC位址重複，亦請參照下列第七點；如果系統顯示為<code class="highlighter-rouge">住宿在男一240</code>，請將姓名、學號、設備MAC位址傳送給網管，<strong>由工程師手動開設帳號</strong>，在網管回覆後的下一個工作天，請前往[宿網系統][宿網]確認IP位址，並開啟第九點左圖中之設定，<strong>勾選自動取得</strong>或是將參數改為:</li>
+  <li>
+    <p>宿舍搬遷後沒有確實在原宿舍退宿（同時參閱第四點、第七點、第九點）<br />
+如果進入宿網系統後，顯示登記在原宿舍而沒辦法註冊，請聯絡原宿舍輔導員；如果顯示MAC位址重複，請聯絡原宿舍網管刪除原帳號；有關MAC位址重複，亦請參照下列第七點；如果系統顯示為<code class="highlighter-rouge">住宿在男一240</code>，請將姓名、學號、設備MAC位址傳送給網管，<strong>由工程師手動開設帳號</strong>，在網管回覆後的下一個工作天，請前往[宿網系統][宿網]確認IP位址，並開啟第九點左圖中之設定，<strong>勾選自動取得</strong>或是將參數改為:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">項目</th>
+          <th style="text-align: center">參數</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center"><code class="highlighter-rouge">IP</code></td>
+          <td style="text-align: center"><code class="highlighter-rouge">your.IP.number</code></td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><code class="highlighter-rouge">Mask</code></td>
+          <td style="text-align: center"><code class="highlighter-rouge">255.255.255.0</code></td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><code class="highlighter-rouge">Gateway</code></td>
+          <td style="text-align: center"><code class="highlighter-rouge">&lt;first.three.number.of.your.IP&gt;.254</code></td>
+        </tr>
+        <tr>
+          <td style="text-align: center"><code class="highlighter-rouge">DNS</code></td>
+          <td style="text-align: center"><code class="highlighter-rouge">one.of.the.following</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Where DNS is:</p>
+    <ul>
+      <li><code class="highlighter-rouge">140.112.2.&lt;197-199&gt;</code></li>
+      <li><code class="highlighter-rouge">140.112.254.4</code></li>
+      <li><code class="highlighter-rouge">168.95.1.1</code></li>
+      <li><code class="highlighter-rouge">8.8.8.8</code><br />
+ 建議優先順序如第九點圖一。<br />
+<br /></li>
+    </ul>
+  </li>
 </ol>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">項目</th>
-      <th style="text-align: center">參數</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><code class="highlighter-rouge">IP</code></td>
-      <td style="text-align: center"><code class="highlighter-rouge">your.IP.number</code></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><code class="highlighter-rouge">Mask</code></td>
-      <td style="text-align: center"><code class="highlighter-rouge">255.255.255.0</code></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><code class="highlighter-rouge">Gateway</code></td>
-      <td style="text-align: center"><code class="highlighter-rouge">&lt;first.three.number.of.your.IP&gt;.254</code></td>
-    </tr>
-    <tr>
-      <td style="text-align: center"><code class="highlighter-rouge">DNS</code></td>
-      <td style="text-align: center"><code class="highlighter-rouge">one.of.the.following</code></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Where DNS is:</p>
-<ul>
-  <li><code class="highlighter-rouge">140.112.2.&lt;197-199&gt;</code></li>
-  <li><code class="highlighter-rouge">140.112.254.4</code></li>
-  <li><code class="highlighter-rouge">168.95.1.1</code></li>
-  <li><code class="highlighter-rouge">8.8.8.8</code><br />
-  建議優先順序如第九點圖一。<br />
-<br />
-    <ol>
-      <li>註冊教學（同時參閱第九點）<br />
+<ol start="4">
+  <li>註冊教學（同時參閱第九點）<br />
 首先請前往網路共用中心<strong>關閉任何無線網路介面，同時接上網路線</strong>，確保設備對外僅能透過網路線聯絡後，參照左下圖路徑，<strong>勾選自動取得IP位址及DNS Server位址（注意：並非第九點中左圖之情形，此處不需手動輸入參數）</strong>，前往<a href="140.112.2.197">宿網系統</a>以NTU帳號註冊。<br />
 註冊完畢後，請記下左圖所需之五個參數。如能上網，即不須變動任何設定；如果不能，請在左圖中的設定中輸入註冊系統給定之參數（注意：系統給定之IP必定為<code class="highlighter-rouge">140.112.&lt;YourDormNumber&gt;.&lt;1-253&gt;</code>，並非圖中之參數）。<br />
 <br /></li>
-      <li>IP錯誤（同時參閱第三點）<br />
+  <li>IP錯誤（同時參閱第三點）<br />
 若查看之後<strong>發現IP並非<code class="highlighter-rouge">140.112.&lt;YourDormNumber&gt;.&lt;1-253&gt;</code>，即為錯誤IP</strong>。常見的錯誤IP為<a href="https://zh.wikipedia.org/wiki/专用网络">ABC三級私網</a>（即<code class="highlighter-rouge">10.0.0.0/8</code>、<code class="highlighter-rouge">172.16.0.0/12</code>、<code class="highlighter-rouge">192.168.0.0/16</code>）。<strong>如果是以上的錯誤IP，請嘗試將無線網路網卡停用</strong>（網路共用中心–&gt;左邊變更介面卡設定–&gt;在相關的圖示上右鍵停用），或<strong>改固定IP</strong>（參見第三點後段）。
 若查看IP為學校無線網路IP（<code class="highlighter-rouge">140.112.&lt;0-9&gt;.&lt;1-253&gt;</code>或是<code class="highlighter-rouge">140.112.25.&lt;1-253&gt;</code>等）或是手機熱點（非112網段），表示電腦已自動連接到無線網路（NTU/ntu_peap/eduroam/手機熱點），請<strong>將無線網路關閉後重試</strong>。<br />
 <br /></li>
-      <li>查詢IP位址方式<br />
-從以下結果中找到一串四個0~255、中間以“.”隔開的數字，即為IP位址。如果使用Router，請在Router的WLAN設定頁中查詢當初輸入的Router，或是前往<a href="140.112.2.197">宿網系統</a>查看。</li>
-    </ol>
+  <li>查詢IP位址方式<br />
+從以下結果中找到一串四個0~255、中間以“.”隔開的數字，即為IP位址。如果使用Router，請在Router的WLAN設定頁中查詢當初輸入的Router，或是前往<a href="140.112.2.197">宿網系統</a>查看。
+    <ul>
+      <li>微軟系統：請開啟cmd輸入“ipconfig/all”</li>
+      <li>Mac OS：請開啟終端機輸入“ifconfig”<br />
+<br /></li>
+    </ul>
   </li>
-  <li>微軟系統：請開啟cmd輸入“ipconfig/all”</li>
-  <li>Mac OS：請開啟終端機輸入“ifconfig”<br />
-<br />
-    <ol>
-      <li>重複MAC位址<br />
+  <li>重複MAC位址<br />
 如果<strong>連接到室友的路由器進行註冊，可能導致系統辨識成錯誤<a href="https://zh.wikipedia.org/wiki/IP地址">IP</a>-<a href="https://zh.wikipedia.org/wiki/MAC地址">MAC</a>序對，而無法上網</strong>。<br />
 請關閉無線網路後改以有線網路註冊。另外如果曾經賣出設備、共用網路介面卡、使用二手設備等，均可能導致MAC位址重複，請自行排除相關問題，網管愛莫能助。<br />
 <br /></li>
-      <li>錯誤<a href="https://zh.wikipedia.org/wiki/MAC地址">MAC位址</a><br />
+  <li>錯誤<a href="https://zh.wikipedia.org/wiki/MAC地址">MAC位址</a><br />
 如果曾經註冊宿網，而後有更換電腦或架設router/AP，則有可能產生此類錯誤。請進入宿網系統查看，將MAC改為新的MAC位址（新電腦或是router/AP）即可。<br />
 <br /></li>
-      <li>找不到IP（IP為<code class="highlighter-rouge">169.254</code>開頭，即在169.254.0.0/16網段中）</li>
-    </ol>
-  </li>
-  <li>請按照以下步驟操作：</li>
-  <li>Windows
+  <li>找不到IP（IP為<code class="highlighter-rouge">169.254</code>開頭，即在169.254.0.0/16網段中）
     <ul>
-      <li>開啟網路共用中心</li>
-      <li>變更介面卡設定</li>
-      <li>選擇乙太網路／區域網路／任何看起來像有線網路且使用中的介面</li>
-      <li>內容</li>
-      <li>雙擊IPv4（途徑如下圖二）</li>
-      <li>將IP改為下圖設定設定</li>
+      <li>請按照以下步驟操作：</li>
+      <li>Windows
+        <ul>
+          <li>開啟網路共用中心</li>
+          <li>變更介面卡設定</li>
+          <li>選擇乙太網路／區域網路／任何看起來像有線網路且使用中的介面</li>
+          <li>內容</li>
+          <li>雙擊IPv4（途徑如下圖二）</li>
+          <li>將IP改為下圖設定設定</li>
+        </ul>
+      </li>
+      <li>MacOS
+        <ul>
+          <li>開啟網路偏好設定</li>
+          <li>使用中之有線網路（如：Apple Ethernet Adapter 或是USB 10/100/1000 Bridge等等）</li>
+          <li>進階→TCP/IP（輸入圖一中上面三個參數）</li>
+          <li>DNS（輸入左下圖中下面兩個參數）</li>
+        </ul>
+      </li>
+      <li>改完參數即可前往宿網系統註冊；註冊完畢請改回系統給定的參數（第三點後段或第四點）。</li>
+      <li>MacOS可能在設定參數時出現<code class="highlighter-rouge">BasicIPv6ValidationError</code>，請開終端機，輸入以下指令；亦詢問Google大神。</li>
     </ul>
   </li>
-  <li>MacOS
-    <ul>
-      <li>開啟網路偏好設定</li>
-      <li>使用中之有線網路（如：Apple Ethernet Adapter 或是USB 10/100/1000 Bridge等等）</li>
-      <li>進階→TCP/IP（輸入圖一中上面三個參數）</li>
-      <li>DNS（輸入左下圖中下面兩個參數）</li>
-    </ul>
-  </li>
-  <li>改完參數即可前往宿網系統註冊；註冊完畢請改回系統給定的參數（第三點後段或第四點）。</li>
-  <li>
-    <p>MacOS可能在設定參數時出現<code class="highlighter-rouge">BasicIPv6ValidationError</code>，請開終端機，輸入以下指令；亦詢問Google大神。</p>
+</ol>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ networksetup -setv6off “&lt;Your Ethernet Adapter&gt;”  
-$ ifconfig &lt;IP&gt; &lt;Mask&gt; &lt;Gateway&gt;    
-</code></pre></div>    </div>
-    <p><img alt="(setting)" src="https://imgur.com/kXftFFZ.png" style="width: 720pt; height: 420pt;" /><br />
-<br />
-        10. 自行架設router/AP<br />
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ networksetup -setv6off “&lt;Your Ethernet Adapter&gt;”  
+    $ ifconfig &lt;IP&gt; &lt;Mask&gt; &lt;Gateway&gt;    
+</code></pre></div></div>
+
+<p><img alt="(setting)" src="https://imgur.com/kXftFFZ.png" style="width: 720pt; height: 420pt;" /><br />
+<br /></p>
+
+<ol start="10">
+  <li>自行架設router/AP<br />
 請參閱廠商說明文件或請教Google大神，<strong>網管沒有責任幫忙舍胞架設router/AP</strong>。<br />
-<br />
-        11. 因為各種原因被鎖<br />
+<br /></li>
+  <li>因為各種原因被鎖<br />
 請前往<a href="http://cert.ntu.edu.tw/Module/Index/ip.php">台大資訊安全中心</a>輸入IP查詢是否被鎖及原因。<br />
 <strong>常見原因為使用各種<a href="https://zh.wikipedia.org/wiki/對等網路">P2P</a>網站或軟體（大部分是影音軟體或網站，如小鴨影音、popcorn、迅雷等），或是中毒</strong>。如為前者，請立即停用並通知網管解鎖；如為後者，請全機掃毒後通知網管解鎖。<br />
 另外也請<strong>不要在宿舍做網路實驗</strong>，很容易被鎖。  <br />
-<br />
-        12. 超出流量<br />
+<br /></li>
+  <li>超出流量<br />
 <strong>唯一解是請等待隔天上午八點流量重置</strong>；另外使用<a href="https://zh.wikipedia.org/wiki/對等網路">P2P技術</a>很容易超出流量，請多加注意。<br />
-<br /></p>
-  </li>
-</ul>
+<br /></li>
+</ol>
 
 <hr />
 
