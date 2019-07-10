@@ -159,8 +159,7 @@
          </tr>
      </tbody>
  </table>
-    <p><br />
- Where DNS is:</p>
+    <p>Where DNS is:</p>
     <ul>
       <li><code class="highlighter-rouge">140.112.2.&lt;197-199&gt;</code></li>
       <li><code class="highlighter-rouge">140.112.254.4</code></li>
@@ -196,22 +195,26 @@
   <li>找不到IP（IP為<code class="highlighter-rouge">169.254</code>開頭，即在169.254.0.0/16網段中）
     <ul>
       <li>請按照以下步驟操作：</li>
-      <li>Windows</li>
-    </ul>
-    <ul>
-      <li>開啟網路共用中心</li>
-      <li>變更介面卡設定</li>
-      <li>選擇乙太網路／區域網路／任何看起來像有線網路且使用中的介面</li>
-      <li>內容</li>
-      <li>雙擊IPv4（途徑如下圖二）</li>
-      <li>將IP改為下圖設定設定<br />
-    - MacOS</li>
-      <li>開啟網路偏好設定</li>
-      <li>使用中之有線網路（如：Apple Ethernet Adapter 或是USB 10/100/1000 Bridge等等）</li>
-      <li>進階→TCP/IP（輸入圖一中上面三個參數）</li>
-      <li>DNS（輸入左下圖中下面兩個參數）<br />
-    - 改完參數即可前往宿網系統註冊；註冊完畢請改回系統給定的參數（第三點後段或第四點）。<br />
-    - MacOS可能在設定參數時出現<code class="highlighter-rouge">BasicIPv6ValidationError</code>，請開終端機，輸入以下指令；亦詢問Google大神。</li>
+      <li>Windows
+        <ul>
+          <li>開啟網路共用中心</li>
+          <li>變更介面卡設定</li>
+          <li>選擇乙太網路／區域網路／任何看起來像有線網路且使用中的介面</li>
+          <li>內容</li>
+          <li>雙擊IPv4（途徑如下圖二）</li>
+          <li>將IP改為下圖設定設定</li>
+        </ul>
+      </li>
+      <li>MacOS
+        <ul>
+          <li>開啟網路偏好設定</li>
+          <li>使用中之有線網路（如：Apple Ethernet Adapter 或是USB 10/100/1000 Bridge等等）</li>
+          <li>進階→TCP/IP（輸入圖一中上面三個參數）</li>
+          <li>DNS（輸入左下圖中下面兩個參數）</li>
+        </ul>
+      </li>
+      <li>改完參數即可前往宿網系統註冊；註冊完畢請改回系統給定的參數（第三點後段或第四點）。</li>
+      <li>MacOS可能在設定參數時出現<code class="highlighter-rouge">BasicIPv6ValidationError</code>，請開終端機，輸入以下指令；亦詢問Google大神。</li>
     </ul>
 
     <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> $ networksetup -setv6off “&lt;Your Ethernet Adapter&gt;”  

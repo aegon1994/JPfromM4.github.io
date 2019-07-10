@@ -53,7 +53,6 @@ Where `YourDormNumber` is:
             </tr>
         </tbody>
     </table>
-    <br/>
     Where DNS is:  
       - `140.112.2.<197-199>`  
       - `140.112.254.4`  
@@ -82,21 +81,21 @@ Where `YourDormNumber` is:
 如果曾經註冊宿網，而後有更換電腦或架設router/AP，則有可能產生此類錯誤。請進入宿網系統查看，將MAC改為新的MAC位址（新電腦或是router/AP）即可。  
 <br />
 9. 找不到IP（IP為`169.254`開頭，即在169.254.0.0/16網段中）  
-  - 請按照以下步驟操作：
-  - Windows
-      - 開啟網路共用中心  
-      - 變更介面卡設定  
-      - 選擇乙太網路／區域網路／任何看起來像有線網路且使用中的介面  
-      - 內容  
-      - 雙擊IPv4（途徑如下圖二）  
-      - 將IP改為下圖設定設定  
-  - MacOS
-      - 開啟網路偏好設定  
-      - 使用中之有線網路（如：Apple Ethernet Adapter 或是USB 10/100/1000 Bridge等等）  
-      - 進階→TCP/IP（輸入圖一中上面三個參數）  
-      - DNS（輸入左下圖中下面兩個參數）  
-  - 改完參數即可前往宿網系統註冊；註冊完畢請改回系統給定的參數（第三點後段或第四點）。  
-  - MacOS可能在設定參數時出現`BasicIPv6ValidationError`，請開終端機，輸入以下指令；亦詢問Google大神。  
+    - 請按照以下步驟操作：
+    - Windows
+        - 開啟網路共用中心  
+        - 變更介面卡設定  
+        - 選擇乙太網路／區域網路／任何看起來像有線網路且使用中的介面  
+        - 內容  
+        - 雙擊IPv4（途徑如下圖二）  
+        - 將IP改為下圖設定設定  
+    - MacOS
+        - 開啟網路偏好設定  
+        - 使用中之有線網路（如：Apple Ethernet Adapter 或是USB 10/100/1000 Bridge等等）  
+        - 進階→TCP/IP（輸入圖一中上面三個參數）  
+        - DNS（輸入左下圖中下面兩個參數）  
+    - 改完參數即可前往宿網系統註冊；註冊完畢請改回系統給定的參數（第三點後段或第四點）。  
+    - MacOS可能在設定參數時出現`BasicIPv6ValidationError`，請開終端機，輸入以下指令；亦詢問Google大神。  
 
     ```
     $ networksetup -setv6off “<Your Ethernet Adapter>”  
