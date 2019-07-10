@@ -78,7 +78,7 @@ nav li a{
   nav li:nth-child(2) a:after{ background: #FFD071;}
   nav li:nth-child(3) a:after{ background: #FFCE56; }
   nav li:nth-child(4) a:after{ background: #FFCCCC; }
-  nav li:nth-child(5) a:after{ background: #FFFF99; }
+  nav li:nth-child(5) a:after{ background: #FF6384; }
   nav li:nth-child(6) a:after{ background: #F5DEB3; }
   nav li:nth-child(7) a:after{ background: #F0776C; }
   nav li:nth-child(8) a:after{ background: #DDDDDD; }
@@ -89,15 +89,6 @@ nav li a{
   nav li:nth-child(13) a:after{ background: #3498DB; }
   nav li:nth-child(14) a:after{ background: #1ABC9C; }
   nav li:last-child a:after{ background: #01FF70; }
-
-.side-bar-link {
-    height: 100%;
-    width: 100%;
-}
-
-.side-bar-link:hover{
-    border-left: 1px rgba(242, 242, 242, 0.9) outset; 
-}
 
 a {
     width: 100%;
@@ -114,4 +105,8 @@ blockquote {
 	color: #999;
 	border-left: 2px solid #999;
     padding-left: 1em; 
+}
+
+table, thead, tbody, tr, th, td {
+  border: black 1pt solid;
 }
