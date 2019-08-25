@@ -25,6 +25,8 @@ title: Let's Chill!
   - [中正廟](https://goo.gl/maps/ehV61gsbt8G97Pc46)、
   - [大安森林公園](https://goo.gl/maps/QeutA1hkDKtD1vmB9)、
   - [齊東公園](https://goo.gl/maps/Su9EXHKXvidhtKN18)、
+  - [三創生活園區](https://www.syntrend.com.tw/)
+  - [窗華商場](http://www.gh3c.com.tw/)
   - 昭和町（參見[商圈資訊](./pages/11_shoppingDist)）。
 
   
