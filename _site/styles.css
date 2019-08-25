@@ -63,7 +63,7 @@ nav li a{
   nav li:nth-child(16) a{ border-left: 5px solid #FF8A65; }
   nav li:nth-child(17) a{ border-left: 5px solid #A1887F; }
   nav li:nth-child(18) a{ border-left: 5px solid #E0E0E0; }
-  nav li:last-child a{ border-left: 5px solid #90A4AE; }
+  nav li:nth-child(19) a{ border-left: 5px solid #90A4AE; }
 
   nav li a:after { 
     content: "";
@@ -96,7 +96,7 @@ nav li a{
   nav li:nth-child(16) a:after{ background: #FF8A65; }
   nav li:nth-child(17) a:after{ background: #A1887F; }
   nav li:nth-child(18) a:after{ background: #E0E0E0; }
-  nav li:last-child a:after{ background: #90A4AE; }
+  nav li:nth-child(19) a:after{ background: #90A4AE; }
 
 a {
     width: 100%;
